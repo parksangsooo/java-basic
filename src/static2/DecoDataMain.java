@@ -13,5 +13,14 @@ public class DecoDataMain {
         DecoData data1 = new DecoData();
         data1.instanceCall();
 
+        //추가
+        //인스턴스를 통한 접근
+        // 권장하지 않음 인스턴스로 불른거라는 느낌이 듬
+        DecoData data2 = new DecoData();
+        data2.staticCall();
+        
+        //클래스를 통한 접근
+        DecoData.staticCall();
+
     }
 }

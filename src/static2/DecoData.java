@@ -10,6 +10,11 @@ public class DecoData {
 //        instanceValue++;  // 인스턴스 변수 접근, 컴파일 에러 , 참조값을 몰라!! 어디로 가야하오..
 //        instanceMethod();   // 인스턴스 메서드, 컴파일 에러
     }
+
+    public static void staticCall(DecoData data){
+        data.instanceValue++;
+        data.instanceMethod();
+    }
     public void instanceCall(){
         staticValue++; // 정적 변수의 접근
         staticMethod(); // 정적 메서드 접근
